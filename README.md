@@ -35,9 +35,21 @@ find ~/boost_1_69_0 -type f | wc -l
 ```
 6. Найдите полный пусть до файла any.hpp внутри библиотеки boost.
 ```
-~/boost_1_69_0$ find $(pwd) -name any.cpp
-/home/ekaterina/boost_1_69_0/libs/fusion/test/algorithm/any.cpp
-/home/ekaterina/boost_1_69_0/libs/hana/example/any.cpp
+~/boost_1_69_0$ find $(pwd) -name any.hpp
+/home/ekaterina/boost_1_69_0/boost/spirit/home/support/algorithm/any.hpp
+/home/ekaterina/boost_1_69_0/boost/any.hpp
+/home/ekaterina/boost_1_69_0/boost/xpressive/detail/utility/any.hpp
+/home/ekaterina/boost_1_69_0/boost/type_erasure/any.hpp
+/home/ekaterina/boost_1_69_0/boost/fusion/algorithm/query/any.hpp
+/home/ekaterina/boost_1_69_0/boost/fusion/algorithm/query/detail/any.hpp
+/home/ekaterina/boost_1_69_0/boost/fusion/include/any.hpp
+/home/ekaterina/boost_1_69_0/boost/proto/detail/any.hpp
+/home/ekaterina/boost_1_69_0/boost/hana/fwd/any.hpp
+/home/ekaterina/boost_1_69_0/boost/hana/any.hpp
+```
+7.Выведите в консоль все файлы, где упоминается последовательность boost::asio.
+```
+~/boost_1_69_0$ grep -rn . -e "boost::asio" > ../Рабочий\ стол/task7.txt
 ```
 
 
@@ -46,11 +58,12 @@ find ~/boost_1_69_0 -type f | wc -l
 
 
 
+
     
     
     
     
-    Выведите в консоль все файлы, где упоминается последовательность boost::asio.
+    
     Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
     Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
     Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
