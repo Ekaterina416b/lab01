@@ -33,6 +33,14 @@ find ~/boost_1_69_0 -type f | wc -l
 /boost_1_69_0$ find . -type f -not -name "*.cpp" -and -type f -not -name "*.hpp" -and -type f -not -name "*.h" | wc -l
 >>32209
 ```
+6. Найдите полный пусть до файла any.hpp внутри библиотеки boost.
+```
+~/boost_1_69_0$ find $(pwd) -name any.cpp
+/home/ekaterina/boost_1_69_0/libs/fusion/test/algorithm/any.cpp
+/home/ekaterina/boost_1_69_0/libs/hana/example/any.cpp
+```
+
+
 
 
 
@@ -41,8 +49,7 @@ find ~/boost_1_69_0 -type f | wc -l
     
     
     
-    Подсчитайте количество заголовочных файлов, файлов с расширением .cpp, сколько остальных файлов (не заголовочных и не .cpp).
-    Найдите полный пусть до файла any.hpp внутри библиотеки boost.
+    
     Выведите в консоль все файлы, где упоминается последовательность boost::asio.
     Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
     Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
