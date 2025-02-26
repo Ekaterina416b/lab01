@@ -53,7 +53,7 @@ find ~/boost_1_69_0 -type f | wc -l
 ```
 [task7](task7.txt)
 
-8. Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
+8. Скомпилирутйе boost. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
 
 
 
