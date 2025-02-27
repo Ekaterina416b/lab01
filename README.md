@@ -70,6 +70,25 @@ find ~/boost_1_69_0 -type f | wc -l
 ```
 ~/boost-libs$ ls -la > ~/Рабочий\ стол/task10.txt
 ```
+[task10.txt](task10)
+
+11.Найдите топ10 самых "тяжёлых".
+```
+~/boost-libs$ du -hs * | sort -rh | head -10
+```
+4,5M	libboost_wave.a
+2,7M	libboost_regex.a
+2,7M	libboost_math_tr1l.a
+2,7M	libboost_math_tr1.a
+2,6M	libboost_math_tr1f.a
+2,3M	libboost_unit_test_framework.a
+2,3M	libboost_test_exec_monitor.a
+2,0M	libboost_locale.a
+1,6M	libboost_program_options.a
+1,2M	libboost_serialization.a
+
+
+
 
 
 
