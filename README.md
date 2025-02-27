@@ -1,7 +1,5 @@
 # lab01
-
-
-1. Скачайте библиотеку boost с помощью утилиты wget. Адрес для скачивания https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz.
+1. Скачайте библиотеку boost с помощью утилиты wget. Адрес для скачивания https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz.  
 ```
 ~/workspace/tasks$ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 --2025-02-19 17:58:22--  https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz[task1.txt](https://github.com/user-attachments/files/18872750/task1.txt)
@@ -9,7 +7,7 @@
 [task1](task1.txt)
 
 2. Разархивируйте скаченный файл в директорию ~/boost_1_69_0
-  ```
+```
 ~/workspace/tasks$ tar -xzf boost_1_69_0.tar.gz -C ../../
 ```
 3. Подсчитайте количество файлов в директории ~/boost_1_69_0 не включая вложенные директории.
@@ -47,11 +45,11 @@ find ~/boost_1_69_0 -type f | wc -l
 /home/ekaterina/boost_1_69_0/boost/hana/fwd/any.hpp
 /home/ekaterina/boost_1_69_0/boost/hana/any.hpp
 ```
-7.Выведите в консоль все файлы, где упоминается последовательность boost::asio.
+7. Выведите в консоль все файлы, где упоминается последовательность boost::asio.
 ```
 ~/boost_1_69_0$ grep -rn . -e "boost::asio" > ../Рабочий\ стол/task7.txt
 ```
-[task7](task7.txt)
+[task7](task7.txt)  
 
 8. Скомпилирутйе boost. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
 ```
@@ -63,27 +61,27 @@ find ~/boost_1_69_0 -type f | wc -l
 ```
 ~/boost_1_69_0/stage/lib$ cp *.a ~/boost-libs/
 ~/boost-libs$ ls
-```
+```  
 [task9.txt](task9)
 
-10.Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
+10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 ```
 ~/boost-libs$ ls -la > ~/Рабочий\ стол/task10.txt
 ```
-[task10.txt](task10)
+[task10.txt](task10)  
 
-11.Найдите топ10 самых "тяжёлых".
+11. Найдите топ10 самых "тяжёлых".
 ```
 ~/boost-libs$ du -hs * | sort -rh | head -10
 ```
-4,5M	libboost_wave.a
-2,7M	libboost_regex.a
-2,7M	libboost_math_tr1l.a
-2,7M	libboost_math_tr1.a
-2,6M	libboost_math_tr1f.a
-2,3M	libboost_unit_test_framework.a
-2,3M	libboost_test_exec_monitor.a
-2,0M	libboost_locale.a
-1,6M	libboost_program_options.a
+4,5M	libboost_wave.a  
+2,7M	libboost_regex.a  
+2,7M	libboost_math_tr1l.a  
+2,7M	libboost_math_tr1.a  
+2,6M	libboost_math_tr1f.a  
+2,3M	libboost_unit_test_framework.a  
+2,3M	libboost_test_exec_monitor.a  
+2,0M	libboost_locale.a  
+1,6M	libboost_program_options.a  
 1,2M	libboost_serialization.a
 
