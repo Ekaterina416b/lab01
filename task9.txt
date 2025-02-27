@@ -1,0 +1,17 @@
+libboost_atomic.a      libboost_math_tr1l.a
+libboost_chrono.a      libboost_prg_exec_monitor.a
+libboost_container.a   libboost_program_options.a
+libboost_context.a     libboost_random.a
+libboost_contract.a    libboost_regex.a
+libboost_date_time.a   libboost_serialization.a
+libboost_exception.a   libboost_stacktrace_addr2line.a
+libboost_fiber.a       libboost_stacktrace_backtrace.a
+libboost_filesystem.a  libboost_stacktrace_basic.a
+libboost_graph.a       libboost_stacktrace_noop.a
+libboost_iostreams.a   libboost_system.a
+libboost_locale.a      libboost_test_exec_monitor.a
+libboost_math_c99.a    libboost_timer.a
+libboost_math_c99f.a   libboost_unit_test_framework.a
+libboost_math_c99l.a   libboost_wave.a
+libboost_math_tr1.a    libboost_wserialization.a
+libboost_math_tr1f.a
