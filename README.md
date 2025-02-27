@@ -64,13 +64,13 @@ find ~/boost_1_69_0 -type f | wc -l
 ~/boost_1_69_0/stage/lib$ cp *.a ~/boost-libs/
 ~/boost-libs$ ls
 ```  
-[task9.txt](task9)
+[task9.txt](task9.txt)
 
 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 ```
 ~/boost-libs$ ls -la > ~/Рабочий\ стол/task10.txt
 ```
-[task10.txt](task10)  
+[task10.txt](task10.txt)  
 
 11. Найдите топ10 самых "тяжёлых".
 ```
