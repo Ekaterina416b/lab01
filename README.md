@@ -54,10 +54,21 @@ find ~/boost_1_69_0 -type f | wc -l
 [task7](task7.txt)
 
 8. Скомпилирутйе boost. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
+```
+~$ ./bootstrap.sh
+~$ ./b2
+~$ sudo ./b2 install
+```
+9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
+```
+~/boost_1_69_0/stage/lib$ cp *.a ~/boost-libs/
+~/boost-libs$ ls
+```
 
 
 
-Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
+
+
     Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
     Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
     Найдите топ10 самых "тяжёлых".
