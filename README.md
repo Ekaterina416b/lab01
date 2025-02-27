@@ -57,6 +57,8 @@ find ~/boost_1_69_0 -type f | wc -l
 ~$ ./b2
 ~$ sudo ./b2 install
 ```
+[task8](task8.txt)  
+
 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
 ```
 ~/boost_1_69_0/stage/lib$ cp *.a ~/boost-libs/
